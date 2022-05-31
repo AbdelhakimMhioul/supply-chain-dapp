@@ -1,4 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
+
+// Smart Contracts' ABIs
+import SupplyChainContract from '../build/contracts/SupplyChain.json';
 
 export default function Home() {
   return (
@@ -9,7 +12,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-blue-600 text-white">Hello There</div>
+      <header className="m-6 flex flex-col items-center justify-center space-y-4">
+        <h1 className="text-5xl font-bold">Fair Trade Coffee</h1>
+        <p className="text-xl">
+          Prove the authenticity of coffee using the Ethereum blockchain.
+        </p>
+      </header>
     </div>
   )
 }

@@ -12,8 +12,8 @@
 /.next/
 /out/
 
-# production
-/build
+{% comment %} # production
+/build {% endcomment %}
 
 # misc
 .DS_Store
@@ -27,6 +27,10 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
+
+# Mnemonic
+.secret

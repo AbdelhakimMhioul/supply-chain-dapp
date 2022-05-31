@@ -1,6 +1,8 @@
 {
   "name": "supply-chain-dapp",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "A Blockchain Supply Chain Management System",
+  "author": "Abdelhakim Mhioul <hk.mhl1975@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,7 +16,10 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
     "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
   }
 }

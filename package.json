@@ -4,6 +4,7 @@
   "description": "A Blockchain Supply Chain Management System",
   "author": "Abdelhakim Mhioul <hk.mhl1975@gmail.com>",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

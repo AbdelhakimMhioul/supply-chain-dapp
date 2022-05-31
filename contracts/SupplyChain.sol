@@ -237,7 +237,7 @@ contract SupplyChain is Ownable, Farmer, Distributor, Retailer, Consumer {
         existingItem.itemState = StateProduct.ForSale;
         existingItem.productPrice = _price;
         // Add Harvest to Item History
-        itemsHistory[_upc]["Sold"] = tx.origin;
+        itemsHistory[_upc]["ForSale"] = tx.origin;
         // Emit the appropriate event
         emit ForSale(_upc);
     }
@@ -337,83 +337,8 @@ contract SupplyChain is Ownable, Farmer, Distributor, Retailer, Consumer {
         emit Purchased(_upc);
     }
 
-    // Define a function 'fetchItemBufferOne' that fetches the data
-    function fetchItemBufferOne(uint256 _upc)
-        public
-        view
-        returns (
-            uint256 itemSKU,
-            uint256 itemUPC,
-            address ownerID,
-            address originFarmerID,
-            string memory originFarmName,
-            string memory originFarmInformation,
-            string memory originFarmLatitude,
-            string memory originFarmLongitude
-        )
-    {
-        // Assign values to the 8 parameters
-        Item memory existingItem = items[_upc];
-
-        itemSKU = existingItem.sku;
-        itemUPC = existingItem.upc;
-        ownerID = existingItem.ownerID;
-        originFarmerID = existingItem.originFarmerID;
-        originFarmName = existingItem.originFarmName;
-        originFarmInformation = existingItem.originFarmInformation;
-        originFarmLatitude = existingItem.originFarmLatitude;
-        originFarmLongitude = existingItem.originFarmLongitude;
-
-        return (
-            itemSKU,
-            itemUPC,
-            ownerID,
-            originFarmerID,
-            originFarmName,
-            originFarmInformation,
-            originFarmLatitude,
-            originFarmLongitude
-        );
-    }
-
-    // Define a function 'fetchItemBufferTwo' that fetches the data
-    function fetchItemBufferTwo(uint256 _upc)
-        public
-        view
-        returns (
-            uint256 itemSKU,
-            uint256 itemUPC,
-            uint256 productID,
-            string memory productNotes,
-            uint256 productPrice,
-            uint256 itemState,
-            address distributorID,
-            address retailerID,
-            address consumerID
-        )
-    {
-        // Assign values to the 9 parameters
-        Item memory existingItem = items[_upc];
-        itemSKU = existingItem.sku;
-        itemUPC = existingItem.upc;
-        productID = existingItem.productID;
-        productNotes = existingItem.productNotes;
-        productPrice = existingItem.productPrice;
-        itemState = uint256(existingItem.itemState);
-        distributorID = existingItem.distributorID;
-        retailerID = existingItem.retailerID;
-        consumerID = existingItem.consumerID;
-
-        return (
-            itemSKU,
-            itemUPC,
-            productID,
-            productNotes,
-            productPrice,
-            itemState,
-            distributorID,
-            retailerID,
-            consumerID
-        );
+    // Define a function that fetches the item's data
+    function fetchItem(uint256 _upc) public view returns (Item memory) {
+        return items[_upc];
     }
 }

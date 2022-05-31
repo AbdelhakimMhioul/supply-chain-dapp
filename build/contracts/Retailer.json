@@ -49,7 +49,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -3925,14 +3926,42 @@
   },
   "networks": {
     "5777": {
-      "events": {},
+      "events": {
+        "0x71ae26cad02663e3d92efd6ec56031a80d74a20c0ab4183faa8bf262261c9baa": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "RetailerAdded",
+          "type": "event"
+        },
+        "0xdb7176e79cffef81cb01767dd0447a0b24bb72ca9778d4b245581086b2a7e6db": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "RetailerRemoved",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x888838976c74c246d76fD8C2Bb1ff8da02563133",
-      "transactionHash": "0x586e9c0c56f63cad46ff74515c4c09adee3a463337f26a5a6c92cd34e108649a"
+      "address": "0x645746Ae2AD4A5a4735b00B2aF05cEB578C5079C",
+      "transactionHash": "0x422286e78381ca1b9547b698c8cf1069d0e4401b8a05c6e59169f2bfd46d6b94"
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-31T13:32:04.214Z",
+  "updatedAt": "2022-05-31T19:18:08.783Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "Contract for managing the retailer role",
     "kind": "dev",

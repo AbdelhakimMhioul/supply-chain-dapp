@@ -49,7 +49,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -3925,14 +3926,42 @@
   },
   "networks": {
     "5777": {
-      "events": {},
+      "events": {
+        "0x28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee07142": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerAdded",
+          "type": "event"
+        },
+        "0xe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f098": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerRemoved",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x12C3FcD80B7b53f9fAafEb18AD2f258153c07C3D",
-      "transactionHash": "0x72c65ea55fee630a4e1c7bf07b1bb02909408f7138cf13fe2e23f3d1a504f2e6"
+      "address": "0xCfb743661b3E8bd09A30fAFe573Dd162f0e7BbE6",
+      "transactionHash": "0xdef03515cdcd5120213e803d4e6523d32a3917aa1743f7c8807b47c4064150a3"
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-31T13:32:04.164Z",
+  "updatedAt": "2022-05-31T19:18:08.792Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "Contract for managing the consumer role",
     "kind": "dev",

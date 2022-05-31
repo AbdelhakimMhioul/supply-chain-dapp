@@ -49,7 +49,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -3910,14 +3911,42 @@
   },
   "networks": {
     "5777": {
-      "events": {},
+      "events": {
+        "0x2e0ded4123377a3c2bc9a26f1717655a129e2f20752924d42e730ec89c83dbd0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "FarmerAdded",
+          "type": "event"
+        },
+        "0xa5e0f060af304ab17dd418c7927e3da3ae7868189bf387aee09ab179ccc572f2": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "FarmerRemoved",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x1B031C9Ed76639929133f8B0Fee807d3F2Fd8A49",
-      "transactionHash": "0xabbf1067b7f1173f212336b1cfb7f1ba7f997db6581b3de32a5ae5578d1c1a2d"
+      "address": "0xe21322a4e7DAC51eC5e0af09F54e046C6D47Ad6E",
+      "transactionHash": "0x1fb455fcd7e2f904b29fb4629beaf2662943dbca02a1114a59aa2b58376ef2ca"
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-31T13:32:04.211Z",
+  "updatedAt": "2022-05-31T19:18:08.762Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "Contract for managing the farmer role",
     "kind": "dev",

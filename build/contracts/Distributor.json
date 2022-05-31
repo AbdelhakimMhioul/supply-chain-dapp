@@ -49,7 +49,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -3925,14 +3926,42 @@
   },
   "networks": {
     "5777": {
-      "events": {},
+      "events": {
+        "0xddbf200aa634dc3fb81cfd68583dd1040d1c751d335e1d86b631bde3e977fea8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "DistributorAdded",
+          "type": "event"
+        },
+        "0x126174f6cf49c81cdb4a9214c6b8f037bef55b4ec31e4fc776cea2a1c8a88d59": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "DistributorRemoved",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x2758f9eBaf3CFD2A1E356160eCd6F4aB8b71e5b4",
-      "transactionHash": "0x6ee9457b99ef8f28512f3c6daaedc20cba8e480090f7e3794a242d1f12a885f1"
+      "address": "0x7cb8B5f24Ec6cf5Be3d9b397bc79341C7265d1fA",
+      "transactionHash": "0x3cffa8467db3b6b1668a74f7d2fc7746162a2120b346be396044ba18436bac26"
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-31T13:32:04.208Z",
+  "updatedAt": "2022-05-31T19:18:08.773Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "Contract for managing the distributor role",
     "kind": "dev",

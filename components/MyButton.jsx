@@ -106,10 +106,10 @@ export default function Button({
 		});
 	};
 
-	const fetchItemBufferOne = async () => {
+	const fetchItem = async () => {
 		try {
 			const result = await web3State.contract.methods
-				.fetchItemBufferOne(item.upc)
+				.fetchItem(item.upc)
 				.call();
 			setItem({
 				sku: result[0],
@@ -161,7 +161,7 @@ export default function Button({
 				return await purchaseItem(event);
 				break;
 			case 9:
-				return await fetchItemBufferOne(event);
+				return await fetchItem(event);
 				break;
 		}
 	};

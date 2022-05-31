@@ -1920,12 +1920,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x5a8Cfe78B8112f2156470B3482BE284b86eB3bb9",
-      "transactionHash": "0xcb3a3964ee2bd8d89ce8dee65b500371f7eb516e090555a5a4db17d4ed4929d2"
+      "address": "0x6154937dbd517a1dd90879dBa7Ea6B9C068F77D5",
+      "transactionHash": "0x8d5364201f45f3b46311948067f4e9d4852646236e04a96e7433b833226dcbda"
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-31T12:35:04.345Z",
+  "updatedAt": "2022-05-31T19:18:08.852Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Contract for managing migrations",

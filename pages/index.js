@@ -66,8 +66,23 @@ export default function Home() {
     event.preventDefault();
 
     const addressHarvested = await web3State.contract.methods.getItemHistory(item.upc, "Harvested").call()
-    console.log(addressHarvested)
-    setTransactionHistory({ ...transactionHistory, harvested: addressHarvested })
+    const addressProcessed = await web3State.contract.methods.getItemHistory(item.upc, "Processed").call()
+    const addressPacked = await web3State.contract.methods.getItemHistory(item.upc, "Packed").call()
+    const addressForSale = await web3State.contract.methods.getItemHistory(item.upc, "ForSale").call()
+    const addressSold = await web3State.contract.methods.getItemHistory(item.upc, "Sold").call()
+    const addressShipped = await web3State.contract.methods.getItemHistory(item.upc, "Shipped").call()
+    const addressReceived = await web3State.contract.methods.getItemHistory(item.upc, "Received").call()
+    const addressPurchased = await web3State.contract.methods.getItemHistory(item.upc, "Purchased").call()
+    setTransactionHistory({
+      harvested: addressHarvested,
+      processed: addressProcessed,
+      packed: addressPacked,
+      forSale: addressForSale,
+      sold: addressSold,
+      shipped: addressShipped,
+      received: addressReceived,
+      purchased: addressPurchased
+    })
   }
 
   return (
@@ -250,12 +265,12 @@ export default function Home() {
                   }
                 />
                 <InputField
-                  labelName="ETH Distributor ID"
+                  labelName="Distributor ID"
                   id="distributorID"
                   name="distributorID"
                   value={item.distributorID}
                   type="text"
-                  placeholder="ETH Distributor ID"
+                  placeholder="Distributor ID"
                   onChange={(e) =>
                     setItem({ ...item, distributorID: e.target.value })
                   }
@@ -331,6 +346,13 @@ export default function Home() {
               Display History
             </button>
             <div>Harvested: {transactionHistory.harvested}</div>
+            <div>Processed: {transactionHistory.processed}</div>
+            <div>Packed: {transactionHistory.packed}</div>
+            <div>For Sale: {transactionHistory.forSale}</div>
+            <div>Sold: {transactionHistory.sold}</div>
+            <div>Shipped: {transactionHistory.shipped}</div>
+            <div>Received: {transactionHistory.received}</div>
+            <div>Purchased: {transactionHistory.purchased}</div>
           </div>
         </main>
       </div>

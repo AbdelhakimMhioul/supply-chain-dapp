@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-blue-600">Hello There</div>
+      <div className="bg-blue-600 text-white">Hello There</div>
     </div>
   )
 }

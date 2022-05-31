@@ -40,7 +40,7 @@ contract Consumer {
     }
 
     // Define a function 'renounceConsumer' to renounce this role
-    function renounceConsumer() public {
+    function renounceConsumer(address account) public {
         consumers.remove(account);
         emit ConsumerRemoved(account);
     }

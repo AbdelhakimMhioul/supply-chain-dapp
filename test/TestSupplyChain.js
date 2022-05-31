@@ -101,6 +101,11 @@ contract('SupplyChain', function (accounts) {
          State.Harvested,
          'Error: Invalid item State'
       );
+      assert.equal(
+         item.productID,
+         productID,
+         'Error: Invalid item State'
+      );
       assert.equal(eventEmitted, true, 'Invalid event emitted');
    });
 
@@ -153,6 +158,11 @@ contract('SupplyChain', function (accounts) {
          State.Processed,
          'Error: Invalid item State'
       );
+      assert.equal(
+         item.productID,
+         productID,
+         'Error: Invalid item State'
+      );
       assert.equal(eventEmitted, true, 'Invalid event emitted');
    });
 
@@ -201,6 +211,11 @@ contract('SupplyChain', function (accounts) {
          'Error: Missing or Invalid originFarmLongitude'
       );
       assert.equal(item.itemState, State.Packed, 'Error: Invalid item State');
+      assert.equal(
+         item.productID,
+         productID,
+         'Error: Invalid item State'
+      );
       assert.equal(eventEmitted, true, 'Invalid event emitted');
    });
 
@@ -251,6 +266,11 @@ contract('SupplyChain', function (accounts) {
       assert.equal(
          item.itemState,
          State.ForSale,
+         'Error: Invalid item State'
+      );
+      assert.equal(
+         item.productID,
+         productID,
          'Error: Invalid item State'
       );
       assert.equal(eventEmitted, true, 'Invalid event emitted');
@@ -306,6 +326,11 @@ contract('SupplyChain', function (accounts) {
          'Error: Missing or Invalid originFarmLongitude'
       );
       assert.equal(item.itemState, State.Sold, 'Error: Invalid item State');
+      assert.equal(
+         item.productID,
+         productID,
+         'Error: Invalid item State'
+      );
       assert.equal(eventEmitted, true, 'Invalid event emitted');
    });
 
@@ -356,6 +381,11 @@ contract('SupplyChain', function (accounts) {
       assert.equal(
          item.itemState,
          State.Shipped,
+         'Error: Invalid item State'
+      );
+      assert.equal(
+         item.productID,
+         productID,
          'Error: Invalid item State'
       );
       assert.equal(eventEmitted, true, 'Invalid event emitted');
@@ -410,6 +440,11 @@ contract('SupplyChain', function (accounts) {
       assert.equal(
          item.itemState,
          State.Received,
+         'Error: Invalid item State'
+      );
+      assert.equal(
+         item.productID,
+         productID,
          'Error: Invalid item State'
       );
       assert.equal(item.retailerID, retailerID, 'Error: Invalid Retailer ID');
@@ -470,6 +505,11 @@ contract('SupplyChain', function (accounts) {
          State.Purchased,
          'Error: Invalid item State'
       );
+      assert.equal(
+         item.productID,
+         productID,
+         'Error: Invalid item State'
+      );
       assert.equal(item.retailerID, retailerID, 'Error: Invalid Retailer ID');
       assert.equal(item.consumerID, consumerID, 'Error: Invalid Consumer ID');
       assert.equal(eventEmitted, true, 'Invalid event emitted');
@@ -512,6 +552,11 @@ contract('SupplyChain', function (accounts) {
          item.originFarmLongitude,
          originFarmLongitude,
          'Error: Missing or Invalid originFarmLongitude'
+      );
+      assert.equal(
+         item.productID,
+         productID,
+         'Error: Invalid item State'
       );
    });
 })

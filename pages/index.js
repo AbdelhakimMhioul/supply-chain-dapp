@@ -94,9 +94,9 @@ export default function Home() {
       </Head>
 
       <header className="m-6 flex flex-col items-center justify-center space-y-4">
-        <h1 className="text-5xl font-bold">Fair Trade Coffee</h1>
+        <h1 className="text-5xl font-bold">SCD</h1>
         <p className="text-xl">
-          Prove the authenticity of coffee using the Ethereum blockchain.
+          Prove the authenticity of a product using the Ethereum blockchain.
         </p>
       </header>
 

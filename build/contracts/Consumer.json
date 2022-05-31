@@ -1,0 +1,94 @@
+{
+  "contractName": "Consumer",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Contract for managing the consumer role\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Consumer\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Roles/Consumer.sol\":\"Consumer\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Roles/Consumer.sol\":{\"keccak256\":\"0x7fa572c0161bfae4b1978960fd2452bb9d8172af09111cd475d46e55be2d1550\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://810a3d6fd34d7bec5ca8eb5ccc7700030e98bed132abaa4793c4ecd31170f970\",\"dweb:/ipfs/QmaH29zxhvS5An5vRT3uwdm5MT9L92bMvREGVypHkkPLYV\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220aa7d92c6371cd156b8781f2b6197bd9c9fbcb20ad74f90913f67b67303f9965564736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220aa7d92c6371cd156b8781f2b6197bd9c9fbcb20ad74f90913f67b67303f9965564736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "141:22:2:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "141:22:2:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\n/**\n * @title Consumer\n * @dev Contract for managing the consumer role\n */\ncontract Consumer {\n\n}\n",
+  "sourcePath": "/home/hakim/Templates/supply-chain-dapp/contracts/Roles/Consumer.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Roles/Consumer.sol",
+    "exportedSymbols": {
+      "Consumer": [
+        161
+      ]
+    },
+    "id": 162,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 159,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Consumer",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 160,
+          "nodeType": "StructuredDocumentation",
+          "src": "66:74:2",
+          "text": " @title Consumer\n @dev Contract for managing the consumer role"
+        },
+        "fullyImplemented": true,
+        "id": 161,
+        "linearizedBaseContracts": [
+          161
+        ],
+        "name": "Consumer",
+        "nameLocation": "150:8:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 162,
+        "src": "141:22:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:132:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x12C3FcD80B7b53f9fAafEb18AD2f258153c07C3D",
+      "transactionHash": "0x72c65ea55fee630a4e1c7bf07b1bb02909408f7138cf13fe2e23f3d1a504f2e6"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T12:35:04.333Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "Contract for managing the consumer role",
+    "kind": "dev",
+    "methods": {},
+    "title": "Consumer",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

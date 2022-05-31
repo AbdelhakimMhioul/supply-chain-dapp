@@ -1,0 +1,94 @@
+{
+  "contractName": "Farmer",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Contract for managing the farmer role\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Farmer\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Roles/Farmer.sol\":\"Farmer\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Roles/Farmer.sol\":{\"keccak256\":\"0xe69c115aaacb2a6f0694199f112567285d0cd7f51b031171152167d530f1d8d1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a1b2be7260a25bc1ce2b81a0fa5c9ef50375d1c658a6f99a5ab7f17f567c882c\",\"dweb:/ipfs/QmVyKVwn2sNCMggeaa7cAt1k7VY1jAkGbtsw45FdEvwwJv\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122013ab54ee0966e137f9aa9c53e2430c6289c0ca294f5d20eff13f0818deb9811c64736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122013ab54ee0966e137f9aa9c53e2430c6289c0ca294f5d20eff13f0818deb9811c64736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "137:20:4:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "137:20:4:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\n/**\n * @title Farmer\n * @dev Contract for managing the farmer role\n */\ncontract Farmer {\n\n}\n",
+  "sourcePath": "/home/hakim/Templates/supply-chain-dapp/contracts/Roles/Farmer.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Roles/Farmer.sol",
+    "exportedSymbols": {
+      "Farmer": [
+        169
+      ]
+    },
+    "id": 170,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 167,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Farmer",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 168,
+          "nodeType": "StructuredDocumentation",
+          "src": "66:70:4",
+          "text": " @title Farmer\n @dev Contract for managing the farmer role"
+        },
+        "fullyImplemented": true,
+        "id": 169,
+        "linearizedBaseContracts": [
+          169
+        ],
+        "name": "Farmer",
+        "nameLocation": "146:6:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 170,
+        "src": "137:20:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:126:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x1B031C9Ed76639929133f8B0Fee807d3F2Fd8A49",
+      "transactionHash": "0xabbf1067b7f1173f212336b1cfb7f1ba7f997db6581b3de32a5ae5578d1c1a2d"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T12:35:04.330Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "Contract for managing the farmer role",
+    "kind": "dev",
+    "methods": {},
+    "title": "Farmer",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

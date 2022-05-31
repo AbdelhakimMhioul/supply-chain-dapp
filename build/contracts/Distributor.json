@@ -1,0 +1,94 @@
+{
+  "contractName": "Distributor",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Contract for managing the distributor role\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Distributor\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Roles/Distributor.sol\":\"Distributor\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Roles/Distributor.sol\":{\"keccak256\":\"0x5b52fb88a8745a694a2f0e66d9ab22cda4e296731d6d68c95f2eef501aadae9b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f5229e37acccaefae8baca1467d3992dddcf82532699597caf6e71b41e4599c9\",\"dweb:/ipfs/QmNSRoqywZuCyHz1VkH9B3PsprD9jNW9ZgrDrZ6Wu4SHsJ\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122081a4e227749afe6f59eba616ff4451152c0aaaf61f5e684dc3deb4b298c6a20864736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122081a4e227749afe6f59eba616ff4451152c0aaaf61f5e684dc3deb4b298c6a20864736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "147:25:3:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "147:25:3:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\n/**\n * @title Distributor\n * @dev Contract for managing the distributor role\n */\ncontract Distributor {\n\n}\n",
+  "sourcePath": "/home/hakim/Templates/supply-chain-dapp/contracts/Roles/Distributor.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Roles/Distributor.sol",
+    "exportedSymbols": {
+      "Distributor": [
+        165
+      ]
+    },
+    "id": 166,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 163,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Distributor",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 164,
+          "nodeType": "StructuredDocumentation",
+          "src": "66:80:3",
+          "text": " @title Distributor\n @dev Contract for managing the distributor role"
+        },
+        "fullyImplemented": true,
+        "id": 165,
+        "linearizedBaseContracts": [
+          165
+        ],
+        "name": "Distributor",
+        "nameLocation": "156:11:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 166,
+        "src": "147:25:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:141:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x2758f9eBaf3CFD2A1E356160eCd6F4aB8b71e5b4",
+      "transactionHash": "0x6ee9457b99ef8f28512f3c6daaedc20cba8e480090f7e3794a242d1f12a885f1"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T12:35:04.331Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "Contract for managing the distributor role",
+    "kind": "dev",
+    "methods": {},
+    "title": "Distributor",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

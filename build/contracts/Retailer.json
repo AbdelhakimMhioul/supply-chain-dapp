@@ -1,0 +1,94 @@
+{
+  "contractName": "Retailer",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Contract for managing the retailer role\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Retailer\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Roles/Retailer.sol\":\"Retailer\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Roles/Retailer.sol\":{\"keccak256\":\"0xf1b97d569fa1b73b822a3c70c2457463c3986ffc6d7d8ca82b8a7ea7888d5279\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e4280bdfbb72843768db4e2daebc4fe03919bf7cb4db85c2ef1fbe7ff9fe44bb\",\"dweb:/ipfs/QmTnzEpv4ptJftcuwWafJcpoCi3B5rfEvExa3VYmn7K7ED\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ab7478e188ca9146af1c94c2e6e4a58de0c8cc5db3fb90c1554bee139191a14764736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220ab7478e188ca9146af1c94c2e6e4a58de0c8cc5db3fb90c1554bee139191a14764736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "141:22:5:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "141:22:5:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\n/**\n * @title Retailer\n * @dev Contract for managing the retailer role\n */\ncontract Retailer {\n\n}\n",
+  "sourcePath": "/home/hakim/Templates/supply-chain-dapp/contracts/Roles/Retailer.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Roles/Retailer.sol",
+    "exportedSymbols": {
+      "Retailer": [
+        173
+      ]
+    },
+    "id": 174,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 171,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:5"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Retailer",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 172,
+          "nodeType": "StructuredDocumentation",
+          "src": "66:74:5",
+          "text": " @title Retailer\n @dev Contract for managing the retailer role"
+        },
+        "fullyImplemented": true,
+        "id": 173,
+        "linearizedBaseContracts": [
+          173
+        ],
+        "name": "Retailer",
+        "nameLocation": "150:8:5",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 174,
+        "src": "141:22:5",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:132:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x888838976c74c246d76fD8C2Bb1ff8da02563133",
+      "transactionHash": "0x586e9c0c56f63cad46ff74515c4c09adee3a463337f26a5a6c92cd34e108649a"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T12:35:04.332Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "Contract for managing the retailer role",
+    "kind": "dev",
+    "methods": {},
+    "title": "Retailer",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

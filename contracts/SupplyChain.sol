@@ -375,4 +375,45 @@ contract SupplyChain is Ownable, Farmer, Distributor, Retailer, Consumer {
             originFarmLongitude
         );
     }
+
+    // Define a function 'fetchItemBufferTwo' that fetches the data
+    function fetchItemBufferTwo(uint256 _upc)
+        public
+        view
+        returns (
+            uint256 itemSKU,
+            uint256 itemUPC,
+            uint256 productID,
+            string memory productNotes,
+            uint256 productPrice,
+            uint256 itemState,
+            address distributorID,
+            address retailerID,
+            address consumerID
+        )
+    {
+        // Assign values to the 9 parameters
+        Item memory existingItem = items[_upc];
+        itemSKU = existingItem.sku;
+        itemUPC = existingItem.upc;
+        productID = existingItem.productID;
+        productNotes = existingItem.productNotes;
+        productPrice = existingItem.productPrice;
+        itemState = uint256(existingItem.itemState);
+        distributorID = existingItem.distributorID;
+        retailerID = existingItem.retailerID;
+        consumerID = existingItem.consumerID;
+
+        return (
+            itemSKU,
+            itemUPC,
+            productID,
+            productNotes,
+            productPrice,
+            itemState,
+            distributorID,
+            retailerID,
+            consumerID
+        );
+    }
 }

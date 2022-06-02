@@ -14,17 +14,17 @@ export default function Home() {
   const [item, setItem] = useState({
     sku: 0,
     upc: 0,
-    ownerID: '0x0',
-    originFarmerID: '0x0',
+    ownerID: '0x0000000000000000000000000000000000000000',
+    originFarmerID: '0x0000000000000000000000000000000000000000',
     originFarmName: '',
     originFarmInformation: '',
     originFarmLatitude: '',
     originFarmLongitude: '',
     productNotes: '',
     productPrice: 0,
-    distributorID: '0x0',
-    retailerID: '0x0',
-    consumerID: '0x0',
+    distributorID: '0x0000000000000000000000000000000000000000',
+    retailerID: '0x0000000000000000000000000000000000000000',
+    consumerID: '0x0000000000000000000000000000000000000000',
   });
   // Web3 State
   const [web3State, setWeb3State] = useState({
@@ -99,263 +99,260 @@ export default function Home() {
           Prove the authenticity of a product using the Ethereum blockchain.
         </p>
       </header>
-
-      <div>
-        <main className="m-6 flex flex-col items-center justify-center space-y-4">
-          <div id="ftc-harvest">
-            <h2 className="text-3xl">Product Overview</h2>
-            <div className="my-4 flex flex-col space-y-4">
-              <div className="flex space-x-4">
-                <InputField
-                  labelName="UPC"
-                  id="upc"
-                  name="upc"
-                  value={item.upc}
-                  type="number"
-                  placeholder="UPC"
-                  onChange={(e) => setItem({ ...item, upc: e.target.value })}
-                />
-                <InputField
-                  labelName="SKU"
-                  id="sku"
-                  name="sku"
-                  value={item.sku}
-                  type="number"
-                  placeholder="SKU"
-                  onChange={(e) => setItem({ ...item, sku: e.target.value })}
-                />
-                <InputField
-                  labelName="Current Owner ID"
-                  id="ownerID"
-                  name="ownerID"
-                  value={item.ownerID}
-                  type="text"
-                  placeholder="Current Owner ID"
-                  onChange={(e) => setItem({ ...item, ownerID: e.target.value })}
-                />
-              </div>
-              <div className="flex space-x-4">
-                <MyButton
-                  color="#2563eb"
-                  message="Fetch Data 1"
-                  dataId={9}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-              </div>
+      <main className="m-6 flex flex-col items-center justify-center space-y-4">
+        <div id="ftc-harvest">
+          <h2 className="text-3xl">Product Overview</h2>
+          <div className="my-4 flex flex-col space-y-4">
+            <div className="flex space-x-4">
+              <InputField
+                labelName="UPC"
+                id="upc"
+                name="upc"
+                value={item.upc}
+                type="number"
+                placeholder="UPC"
+                onChange={(e) => setItem({ ...item, upc: e.target.value })}
+              />
+              <InputField
+                labelName="SKU"
+                id="sku"
+                name="sku"
+                value={item.sku}
+                type="number"
+                placeholder="SKU"
+                onChange={(e) => setItem({ ...item, sku: e.target.value })}
+              />
+              <InputField
+                labelName="Current Owner ID"
+                id="ownerID"
+                name="ownerID"
+                value={item.ownerID}
+                type="text"
+                placeholder="Current Owner ID"
+                onChange={(e) => setItem({ ...item, ownerID: e.target.value })}
+              />
             </div>
-            <h2 className="text-3xl">Farm Details</h2>
-            <div className="my-4 flex flex-col space-y-4">
-              <div className="flex flex-wrap space-x-4">
-                <InputField
-                  labelName="Farmer ID"
-                  id="originFarmerID"
-                  name="originFarmerID"
-                  value={item.originFarmerID}
-                  type="text"
-                  placeholder="Farmer ID"
-                  onChange={(e) =>
-                    setItem({ ...item, originFarmerID: e.target.value })
-                  }
-                />
-                <InputField
-                  labelName="Farm Name"
-                  id="originFarmName"
-                  name="originFarmName"
-                  value={item.originFarmName}
-                  type="text"
-                  placeholder="Farm Name"
-                  onChange={(e) =>
-                    setItem({ ...item, originFarmName: e.target.value })
-                  }
-                />
-                <InputField
-                  labelName="Farm Information"
-                  id="originFarmInformation"
-                  name="originFarmInformation"
-                  value={item.originFarmInformation}
-                  type="text"
-                  placeholder="Farm Information"
-                  onChange={(e) =>
-                    setItem({ ...item, originFarmInformation: e.target.value })
-                  }
-                />
-                <InputField
-                  labelName="Farm Latitude"
-                  id="originFarmLatitude"
-                  name="originFarmLatitude"
-                  value={item.originFarmLatitude}
-                  type="text"
-                  placeholder="Farm Latitude"
-                  onChange={(e) =>
-                    setItem({ ...item, originFarmLatitude: e.target.value })
-                  }
-                />
-                <InputField
-                  labelName="Farm Longitude"
-                  id="originFarmLongitude"
-                  name="originFarmLongitude"
-                  value={item.originFarmLongitude}
-                  type="text"
-                  placeholder="Farm Longitude"
-                  onChange={(e) =>
-                    setItem({ ...item, originFarmLongitude: e.target.value })
-                  }
-                />
-              </div>
-              <div className="flex space-x-4">
-                <MyButton
-                  color="#d97706"
-                  message="Harvest"
-                  dataId={1}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-                <MyButton
-                  color="#65a30d"
-                  message="Process"
-                  dataId={2}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-                <MyButton
-                  color="#16a34a"
-                  message="Pack"
-                  dataId={3}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-                <MyButton
-                  color="#0d9488"
-                  message="ForSale"
-                  dataId={4}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-              </div>
-            </div>
-            <h2 className="text-3xl">Product Details</h2>
-            <div className="my-4 flex flex-col space-y-4">
-              <div className="flex flex-wrap space-x-4">
-                <InputField
-                  labelName="Product Notes"
-                  id="productNotes"
-                  name="productNotes"
-                  value={item.productNotes}
-                  type="text"
-                  placeholder="Product Notes"
-                  onChange={(e) =>
-                    setItem({ ...item, productNotes: e.target.value })
-                  }
-                />
-                <InputField
-                  labelName="Product Price"
-                  id="productPrice"
-                  name="productPrice"
-                  value={item.productPrice}
-                  type="number"
-                  placeholder="Product Price"
-                  onChange={(e) =>
-                    setItem({ ...item, productPrice: e.target.value })
-                  }
-                />
-                <InputField
-                  labelName="Distributor ID"
-                  id="distributorID"
-                  name="distributorID"
-                  value={item.distributorID}
-                  type="text"
-                  placeholder="Distributor ID"
-                  onChange={(e) =>
-                    setItem({ ...item, distributorID: e.target.value })
-                  }
-                />
-                <InputField
-                  labelName="Retailer ID"
-                  id="retailerID"
-                  name="retailerID"
-                  value={item.retailerID}
-                  type="text"
-                  placeholder="Retailer ID"
-                  onChange={(e) =>
-                    setItem({ ...item, retailerID: e.target.value })
-                  }
-                />
-                <InputField
-                  labelName="Consumer ID"
-                  id="consumerID"
-                  name="consumerID"
-                  value={item.consumerID}
-                  type="text"
-                  placeholder="Consumer ID"
-                  onChange={(e) =>
-                    setItem({ ...item, consumerID: e.target.value })
-                  }
-                />
-              </div>
-              <div className="flex space-x-4">
-                <MyButton
-                  color="#c026d3"
-                  message="Buy"
-                  dataId={5}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-                <MyButton
-                  color="#db2777"
-                  message="Ship"
-                  dataId={6}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-                <MyButton
-                  color="#e11d48"
-                  message="Receive"
-                  dataId={7}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-                <MyButton
-                  color="#881337"
-                  message="Purchase"
-                  dataId={8}
-                  web3State={web3State}
-                  item={item}
-                  setItem={setItem}
-                />
-              </div>
+            <div className="flex space-x-4">
+              <MyButton
+                color="#2563eb"
+                message="Fetch Data 1"
+                dataId={9}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
             </div>
           </div>
-          <div>
-            <h2 className="text-3xl font-bold">
-              Transactions History for Product - {item.upc}
-            </h2>
-            <button
-              id="button"
-              type="button"
-              onClick={handleItemHistory}
-            >
-              Display History
-            </button>
-            <div>Harvested: {transactionHistory.harvested}</div>
-            <div>Processed: {transactionHistory.processed}</div>
-            <div>Packed: {transactionHistory.packed}</div>
-            <div>For Sale: {transactionHistory.forSale}</div>
-            <div>Sold: {transactionHistory.sold}</div>
-            <div>Shipped: {transactionHistory.shipped}</div>
-            <div>Received: {transactionHistory.received}</div>
-            <div>Purchased: {transactionHistory.purchased}</div>
+          <h2 className="text-3xl">Farm Details</h2>
+          <div className="my-4 flex flex-col space-y-4">
+            <div className="flex flex-wrap space-x-4">
+              <InputField
+                labelName="Farmer ID"
+                id="originFarmerID"
+                name="originFarmerID"
+                value={item.originFarmerID}
+                type="text"
+                placeholder="Farmer ID"
+                onChange={(e) =>
+                  setItem({ ...item, originFarmerID: e.target.value })
+                }
+              />
+              <InputField
+                labelName="Farm Name"
+                id="originFarmName"
+                name="originFarmName"
+                value={item.originFarmName}
+                type="text"
+                placeholder="Farm Name"
+                onChange={(e) =>
+                  setItem({ ...item, originFarmName: e.target.value })
+                }
+              />
+              <InputField
+                labelName="Farm Information"
+                id="originFarmInformation"
+                name="originFarmInformation"
+                value={item.originFarmInformation}
+                type="text"
+                placeholder="Farm Information"
+                onChange={(e) =>
+                  setItem({ ...item, originFarmInformation: e.target.value })
+                }
+              />
+              <InputField
+                labelName="Farm Latitude"
+                id="originFarmLatitude"
+                name="originFarmLatitude"
+                value={item.originFarmLatitude}
+                type="text"
+                placeholder="Farm Latitude"
+                onChange={(e) =>
+                  setItem({ ...item, originFarmLatitude: e.target.value })
+                }
+              />
+              <InputField
+                labelName="Farm Longitude"
+                id="originFarmLongitude"
+                name="originFarmLongitude"
+                value={item.originFarmLongitude}
+                type="text"
+                placeholder="Farm Longitude"
+                onChange={(e) =>
+                  setItem({ ...item, originFarmLongitude: e.target.value })
+                }
+              />
+            </div>
+            <div className="flex space-x-4">
+              <MyButton
+                color="#d97706"
+                message="Harvest"
+                dataId={1}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
+              <MyButton
+                color="#65a30d"
+                message="Process"
+                dataId={2}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
+              <MyButton
+                color="#16a34a"
+                message="Pack"
+                dataId={3}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
+              <MyButton
+                color="#0d9488"
+                message="ForSale"
+                dataId={4}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
+            </div>
           </div>
-        </main>
-      </div>
+          <h2 className="text-3xl">Product Details</h2>
+          <div className="my-4 flex flex-col space-y-4">
+            <div className="flex flex-wrap space-x-4">
+              <InputField
+                labelName="Product Notes"
+                id="productNotes"
+                name="productNotes"
+                value={item.productNotes}
+                type="text"
+                placeholder="Product Notes"
+                onChange={(e) =>
+                  setItem({ ...item, productNotes: e.target.value })
+                }
+              />
+              <InputField
+                labelName="Product Price"
+                id="productPrice"
+                name="productPrice"
+                value={item.productPrice}
+                type="number"
+                placeholder="Product Price"
+                onChange={(e) =>
+                  setItem({ ...item, productPrice: e.target.value })
+                }
+              />
+              <InputField
+                labelName="Distributor ID"
+                id="distributorID"
+                name="distributorID"
+                value={item.distributorID}
+                type="text"
+                placeholder="Distributor ID"
+                onChange={(e) =>
+                  setItem({ ...item, distributorID: e.target.value })
+                }
+              />
+              <InputField
+                labelName="Retailer ID"
+                id="retailerID"
+                name="retailerID"
+                value={item.retailerID}
+                type="text"
+                placeholder="Retailer ID"
+                onChange={(e) =>
+                  setItem({ ...item, retailerID: e.target.value })
+                }
+              />
+              <InputField
+                labelName="Consumer ID"
+                id="consumerID"
+                name="consumerID"
+                value={item.consumerID}
+                type="text"
+                placeholder="Consumer ID"
+                onChange={(e) =>
+                  setItem({ ...item, consumerID: e.target.value })
+                }
+              />
+            </div>
+            <div className="flex space-x-4">
+              <MyButton
+                color="#c026d3"
+                message="Buy"
+                dataId={5}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
+              <MyButton
+                color="#db2777"
+                message="Ship"
+                dataId={6}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
+              <MyButton
+                color="#e11d48"
+                message="Receive"
+                dataId={7}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
+              <MyButton
+                color="#881337"
+                message="Purchase"
+                dataId={8}
+                web3State={web3State}
+                item={item}
+                setItem={setItem}
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-3xl font-bold">
+            Transactions History for Product - {item.upc}
+          </h2>
+          <button
+            id="button"
+            type="button"
+            onClick={handleItemHistory}
+          >
+            Display History
+          </button>
+          <div>Harvested: {transactionHistory.harvested}</div>
+          <div>Processed: {transactionHistory.processed}</div>
+          <div>Packed: {transactionHistory.packed}</div>
+          <div>For Sale: {transactionHistory.forSale}</div>
+          <div>Sold: {transactionHistory.sold}</div>
+          <div>Shipped: {transactionHistory.shipped}</div>
+          <div>Received: {transactionHistory.received}</div>
+          <div>Purchased: {transactionHistory.purchased}</div>
+        </div>
+      </main>
     </div>
   )
 }

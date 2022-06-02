@@ -112,19 +112,19 @@ export default function Button({
 				.fetchItem(item.upc)
 				.call();
 			setItem({
-				sku: result[0],
-				upc: result[1],
-				ownerID: result[2],
-				originFarmerID: result[3],
-				originFarmName: result[4],
-				originFarmInformation: result[5],
-				originFarmLatitude: result[6],
-				originFarmLongitude: result[7],
-				productNotes: result[8],
-				productPrice: result[9],
-				distributorID: result[10],
-				retailerID: result[11],
-				consumerID: result[12],
+				sku: result.sku,
+				upc: result.upc,
+				ownerID: result.ownerID,
+				originFarmerID: result.originFarmerID,
+				originFarmName: result.originFarmName,
+				originFarmInformation: result.originFarmInformation,
+				originFarmLatitude: result.originFarmLatitude,
+				originFarmLongitude: result.originFarmLongitude,
+				productNotes: result.productNotes,
+				productPrice: result.productPrice,
+				distributorID: result.distributorID,
+				retailerID: result.retailerID,
+				consumerID: result.consumerID,
 			});
 			return item;
 		} catch (error) {

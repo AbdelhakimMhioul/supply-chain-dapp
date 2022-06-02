@@ -9,7 +9,7 @@ export default function Document() {
             <meta name="theme-color" content="#fff" />
          </Head>
          <body>
-            <Main /> 
+            <Main />
             <NextScript />
          </body>
       </Html>
